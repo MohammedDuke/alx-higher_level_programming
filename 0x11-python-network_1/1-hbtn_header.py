@@ -4,11 +4,13 @@ the header of the response.
 """
 
 
+import sys
+import urllib.request
+
+
 if __name__ == "__main__":
-    import urllib.request
-    import sys
+    url = sys.argv[1]
 
-    with urllib.request.urlopen(sys.argv[1]) as response:
-        head = response.headers.get('X-Request-Id')
-        print(head)
-
+    request = urllib.request.Request(url)
+    with urllib.request.urlopen(request) as resp:
+        print(dict(resp.headers).get("X-Request-Id"))
