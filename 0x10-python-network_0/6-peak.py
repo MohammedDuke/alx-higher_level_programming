@@ -26,4 +26,3 @@ def find_peak(numbr):
         elif idx == length - 1 and numbr[idx - 1] <= value:
             return value
     return pick
-
