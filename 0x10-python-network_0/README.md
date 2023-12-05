@@ -8,6 +8,10 @@ how to utilize cookies.
 Task six was an algorithm challenge separate from the overall project theme
 completed in Python.
 
+## Tests:
+
+- [tests](./tests): Folder of test files. Provided by ALX.
+
 ## Tasks:
 
 NOTE: The `curl` behavior in all Bash scripts were written to interact with a
